@@ -9,6 +9,7 @@ import { MaterialModule } from '@workshop/material';
 import { HomeModule } from './home/home.module';
 import { ProjectsModule } from './projects/projects.module';
 import { CustomersModule } from './customers/customers.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [AppComponent],
