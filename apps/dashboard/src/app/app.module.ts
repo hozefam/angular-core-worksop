@@ -6,21 +6,19 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from '@workshop/material';
-import { HomeModule } from './home/home.module';
-import { ProjectsModule } from './projects/projects.module';
-import { CustomersModule } from './customers/customers.module';
-import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { UiLoginModule } from '@workshop/ui-login';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
     BrowserAnimationsModule,
     MaterialModule,
-    HomeModule,
-    ProjectsModule,
-    CustomersModule
+    UiLoginModule,
+    AppRoutingModule
+
+    // RouterModule.forRoot([], { initialNavigation: 'enabled' }),
   ],
   providers: [],
   bootstrap: [AppComponent]
